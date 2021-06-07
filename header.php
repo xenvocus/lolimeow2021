@@ -6,6 +6,10 @@
 <html <?php language_attributes(); ?>>  
   <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
+    <meta name="theme-color" content="#535da4">
+=======
+>>>>>>> 8c59c480056034941df1eb4f4f3c4c0f6b4e2a1f
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?php echo  boxmoe_title(); ?></title>
 	<?php echo boxmoe_keywords()?>
@@ -17,6 +21,20 @@
 	<?php wp_head(); ?>
   </head>  
   <body>
+<<<<<<< HEAD
+    <script type="text/javascript">
+    jQuery(document).ready(
+        function(jQuery){
+            jQuery('.collapseButton').click(
+                function(){
+                    jQuery(this).parent().parent().find('.xContent').slideToggle('slow');
+                }
+            );
+        }
+    );
+</script>
+=======
+>>>>>>> 8c59c480056034941df1eb4f4f3c4c0f6b4e2a1f
     <header class="header-global">
       <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
         <div class="container">

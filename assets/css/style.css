@@ -21,7 +21,7 @@ p {color:#5F6F81;font-weight:300;cursor:url(../images/texto.cur),auto}
 h1,h2,h3,h4,h5,h6 {font-weight:700;}
 h1 {font-size:40px;}
 h2 {font-size:36px;}
-h3 {font-size:24px;letter-spacing:1px;font-weight:400;}
+h3 {font-size:26px;letter-spacing:1px;font-weight:400;}
 h4 {font-size:20px;letter-spacing:1px;font-weight:400;}
 h5 {font-size:16px;letter-spacing:1px;font-weight:400;}
 h6 {font-size:14px;letter-spacing:1px;font-weight:400;}
@@ -48,7 +48,7 @@ blockquote:before {color:#ac9bd7;content:open-quote;font-size:4em;line-height:0.
 .animated-border-quote blockquote > * {position:relative;z-index:1;}
 @keyframes clockwise {0% {transform:rotate(0);}100% {transform:rotate(360deg);}}
 @keyframes counter {0% {transform:rotate(0);}100% {transform:rotate(-360deg);}}
-.headroom--not-top {background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);}
+.headroom--not-top {background-image: linear-gradient(to right, #535da4 0%, #535da4 100%);}
 .navbar .nav-item .nav-link {font-weight:600;font-size:.8rem;}
 .navbar .nav-item .nav-link.active:before,.navbar .nav-item .nav-link.active,.navbar .nav-item .nav-link .nav-link:focus,.navbar .nav-item .nav-link:hover {color:#FFF;background-color:hsla(0,0%,100%,.1);}
 .nav-tabs .nav-link.active,.nav-tabs .nav-item.show .nav-link {color:#495057;background-color:#fafafa;border-color:#dee2e6 #dee2e6 #fafafa}
@@ -172,7 +172,7 @@ h1.main-title {text-align:center;color:#666;font-size:13px;font-weight:400;paddi
 .post-single .post-auther-avatar img:hover {opacity:1;-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}
 .post-single .post-meta-info {padding:5px 0;line-height:2.2;}
 .post-single .post-content {padding-top:10px;}
-.post-single .post-content,.post-single .post-content p {color:#34495e;font-size:0.9rem;font-weight:300;line-height:1.7;}
+.post-single .post-content,.post-single .post-content p {color:#34495e;font-size:1rem;font-weight:300;line-height:1.7;}
 .post-single .post-content h4 {line-height:1.4;font-weight:700;font-size:15px;border-bottom:2px #f00 solid;width:auto;display:table;}
 .post-single .pagination {display:flex;padding-top:20px}
 .post-single .pagination span {font-size:.875rem;line-height:10px;}
@@ -448,4 +448,10 @@ section,.section {margin:60px 0;}
 .thw-navbar-light {padding:0;padding-bottom:10px;}
 .header-default .header-angle .navbar-collapse {position:absolute;width:100%;top:58px;background:#ee3131;margin-left:0;padding-left:32px;padding-right:0;}
 .header-default .navbar-collapse {position:absolute;width:100%;top:46px;left:0;background:#ffffff;margin-left:0px;padding-left:25px;padding-right:25px;z-index:2;border-radius:0 0 4px 4px;padding-bottom:12px;padding-top:12px;border:1px solid #e5e5e5;}
+}
+.aligncenter { display: block; margin-left: auto; margin-right: auto; } .aligncenter p.wp-caption-text {
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
 }

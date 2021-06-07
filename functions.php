@@ -14,3 +14,24 @@ require_once get_stylesheet_directory() . '/module/config/fun-comments.php';
 require_once get_stylesheet_directory() . '/module/config/fun-admin.php';
 require_once get_stylesheet_directory() . '/module/config/fun-article.php';
 if( get_boxmoe('no_categoty') ) require_once get_stylesheet_directory() . '/module//config/fun-no-category.php';
+//以下可以自定义fun函数
+//定义bbcode：收缩/展开
+function xcollapse($atts, $content = null){
+	extract(shortcode_atts(array("title"=>""),$atts));
+	return '<div style="margin: 0.5em 0;">
+		<div class="xControl">
+			<span class="xTitle"></span>
+			<a href="javascript:void(0)" class="collapseButton xButton">'.$title.'</a>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="xContent" style="display: none;">'.$content.'</div>
+	</div>';
+}
+add_shortcode('collapse', 'xcollapse');
+//添加展开/收缩快捷标签按钮
+function appthemes_add_collapse() {if (wp_script_is('quicktags')){
+?><script type="text/javascript">// <![CDATA[
+QTags.addButton( 'collapse', '展开/收缩按钮', '[collapse title="说明文字"]','[/collapse]' );
+// ]]></script><?php }} add_action('admin_print_footer_scripts', 'appthemes_add_collapse' );
+
+

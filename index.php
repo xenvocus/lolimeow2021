@@ -31,6 +31,7 @@
             </div>
           </div>
         </div>
-		  <?php if( get_boxmoe('indexlinks') ){ echo get_the_link_items_index();  } ?>  		
+		  <?php if( get_boxmoe('indexlinks') ){ echo get_the_link_items_index();  } ?>   		
+
       </div>
     <?php get_footer(); ?>
